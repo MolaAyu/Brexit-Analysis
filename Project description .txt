@@ -1,0 +1,27 @@
+﻿Political stance classification
+In this project, we will solve a supervised machine learning task. The data that we will use for training and evaluation will be annotated collectively by us and other individuals.
+The machine learning task that will be addressed in this project is to develop a text classifier that determines whether a given textual comment expresses an opinion that is positive or negative towards Brexit: the United Kingdom leaving the European Union.
+The first two parts of this project deal with data annotation and are solved individually. In the third and final part, you will implement the classification system, and here you will work in a group of two or three people.
+Didactic purpose of this assignment:
+* Getting some practical understanding of annotating data and inter-annotator agreement.
+* Practice several aspects of system development based on machine learning: getting data, cleaning data, processing and selecting features, selecting and tuning a model, evaluating.
+* Analyzing results in a machine learning experiment.
+Part 1: Crowdsourcing the data
+We collect at least 100 Brexit-related comments from social media or the comment fields from online articles. Good places to trawl for comments include social media sites such as Youtube, and newspaper sites in Britain and elsewhere, such as the Telegraph, the Guardian, Daily Mail, the Independent, the Sun, Daily Express, Breitbart, Huffington Post or other English-language sources.
+Collect comments that express a pro- or anti-Brexit stance. We will create a balanced dataset, so you should try to collect about 50 instances of each stance. We did not include comments not expressing an opinion about Brexit. Also, since other annotators will see each comment in isolation, don't include comments where you need to read previous comments to understand the opinion (e.g. "You're wrong!"). Try to select comments from a variety of sources.
+Store all the comments you collected in an Excel file. This file should have two columns. The first column will store your annotation of whether this comment is pro-Brexit (represented as 1 in the spreadsheet) or anti-Brexit (0 in the spreadsheet). The second column should store the text of the comment. Make sure that the text of each comment is stored in a single cell. The following figure shows an example.
+  
+
+Part 2: Second round of annotation
+Part 3: Implementing classifier
+Write the code to implement a classifier that determines whether a given comment expresses a pro-Brexit or anti-Brexit stance.
+Then write a report detailing implementation, experiments, and analysis. 
+* How much consensus is there between annotators of the dataset? Do you think the data is reliable?
+* How do you represent your data as features?
+* Did you process the features in any way?
+* How did you select which learning algorithms to use?
+* Did you try to tune the hyperparameters of the learning algorithm, and in that case how?
+* How do you evaluate the quality of your system?
+* How well does your system compare to a trivial baseline?
+* Can you say anything about the errors that the system makes? For a classification task, you may consider a confusion matrix. It is also probably meant to include selected errors and comment on what might have gone wrong.
+* Is it possible to say something about which features the model considers important? (Whether this is possible depends on the type of classifier you are using.)
